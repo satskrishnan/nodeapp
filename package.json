@@ -4,7 +4,13 @@
   "description": "Simple nodeapp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha 'src/test/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satskrishnan/nodeapp.git"
   },
   "author": "SathishKumar Krishnan",
   "license": "ISC",
