@@ -14,6 +14,12 @@ app.get('/', (req, res) => {
   res.status(200).send({ text: 'Welcome To This Basic Node.js Application!' });
 });
 
+app.post('/post', (req, res) => {
+  console.log(req.body);
+  res.status(200).send({ text: 'Post Received!' })
+
+});
+
 app.get('/test', (req, res) => {
   res.status(200).send({ text: 'Simple Node App Working!' });
 });
